@@ -1,0 +1,4 @@
+go-timedCond is a simple way to handle go's sync.Condition with also a timeout.
+
+Simply call timedCond.Wait with the condition you want to wait on and a time.Duration of how long you want to wait.
+Even if the condition times out, the condition's goroutine and channel will be garbage collected after the condition is finally signalled.
